@@ -1,0 +1,21 @@
+{
+  "status": "stop_for_review",
+  "formal_allowed": false,
+  "reference_only_not_significance": true,
+  "baseline": "M3",
+  "AP_mean_points": {
+    "M1": 69.80200764522542,
+    "M2": 68.08818562007434,
+    "M3": 70.29650944998922,
+    "M4": 69.52328003195221,
+    "M5": 69.8357186295664,
+    "M6": 69.64051015118145
+  },
+  "paired_AP_point_differences": [
+    0.32432498658205855,
+    -1.8707838226560747
+  ],
+  "performance_gate": false,
+  "quality_gate": true,
+  "confirmation_split_still_required": true
+}

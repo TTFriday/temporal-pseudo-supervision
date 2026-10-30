@@ -1,0 +1,62 @@
+{
+  "config": {
+    "manifest_path": "data_audit/manifest.json",
+    "split_path": "splits/plant_split.json",
+    "audit_path": "data_audit/repair_audit_20261025.json",
+    "audit_sha256": "b383b0f1a5c13b8701be177c11fdb7113f0a6bfacc14568b9ba155ba257a7f89",
+    "n_train": 40,
+    "n_val": 12,
+    "split_seed": 42,
+    "budget_ratio": 0.1,
+    "image_size": 512,
+    "updates": 2000,
+    "eval_every": 500,
+    "log_every": 50,
+    "lr": 0.0025,
+    "warmup_steps": 200,
+    "human_batch": 2,
+    "pseudo_batch": 2,
+    "amp": true,
+    "lambda_pseudo": 0.1,
+    "patience": 6,
+    "eta": 0.2,
+    "max_hours": 48,
+    "confidence": 0.8,
+    "propagation_confidence": 0.8,
+    "iou": 0.7,
+    "sam2_checkpoint": "checkpoints/sam2.1_hiera_tiny.pt",
+    "sam2_config": "configs/sam2.1/sam2.1_hiera_t.yaml",
+    "audit_cleared": true
+  },
+  "protocol_sha256": "08de2e6d8cb50063e67503e21c98f4767eaa51267d92922f1551c11eb27801cc",
+  "source_sha256": {
+    "training\\maskrcnn_model.py": "73761fbf2eb07228a7cfb1eb3d1a5fd0443a42b9bd962221261b46779e711f0f",
+    "training\\partial_supervision.py": "769062ac48c2323f9b2568454d45d5236eba3cfbed0880168c281c99738832c9",
+    "training\\pipeline.py": "e3965cd0bcd2c1cb31ecc8dfb47fff1e33fda5ec3ff855c273141efd63f88a11",
+    "training\\smoke_test.py": "20db87d2574c6af16560ecd98cac56ffaacd2657b0bcc3e781f5aa9378d9d04a",
+    "training\\__init__.py": "94fe010306babb29cf08923c0e316f7bd3cf206ef24ca7738cb7706f38d4efbc",
+    "selection\\event_selector.py": "8b4f6163f6a2b9255f78b7dfcaee424880a957e6c614bd35d962d79b5244eebc",
+    "evaluation\\coco_eval.py": "9acdf2f80d2578821f6380ea85983165af4af0a3eed493e922d59ee4f73a877d",
+    "evaluation\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "propagation\\sam2_adapter.py": "4c1aceccfc311e1efcfa125ec371a78a96954237531c7b7ae96b65fd0eb87bc8",
+    "run_pilot.py": "d5410c7c5609b32c4141ee724af833a804ed96a60c48a6ba0049e2bdde7e0427"
+  },
+  "sam2": {
+    "provenance_sha256": "254a01200e8b6b943ce665bed3cffe5c56f716ac53dbfa1e1ef55ee7852f6dab",
+    "checkpoint_sha256": "7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69",
+    "config_sha256": "f932eac1c6241e910031b2f000a81cd9f8a8d4896e2277ab5ffb721f378b188d"
+  },
+  "manifest_sha256": "bcd2578dcb2a8c468b67c53cce798b61a73a33e19e53963947dc90973d48deff",
+  "split_sha256": "65cbf422d9dfa648135796cf15027e52fc91b0f63b9b059edc3beafbec4142c3",
+  "torch": "2.6.0+cu124",
+  "torchvision": "0.21.0+cu124",
+  "python": "3.10.9 | packaged by Anaconda, Inc. | (main, Mar  1 2023, 18:18:15) [MSC v.1916 64 bit (AMD64)]",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "cuda": "12.4",
+  "seeds": [
+    17,
+    42,
+    73
+  ],
+  "mode": "pilot"
+}

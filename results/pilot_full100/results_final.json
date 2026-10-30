@@ -1,0 +1,143 @@
+{
+  "runs": [
+    {
+      "method": "M1",
+      "seed": 17,
+      "selector": "time_coverage",
+      "teacher": {
+        "signature": "81dba2d9d8a7626ac505ba855f7712ad450dcc62383d3a8c529a001eafdaa22a",
+        "seed": 17,
+        "updates": 2000,
+        "human_seen": 4000,
+        "pseudo_seen": 0,
+        "n_human_frames": 1659,
+        "n_pseudo_frames": 0,
+        "best_validation_AP": 0.7146667349399202,
+        "best_step": 1000,
+        "cuda_run_wall_hours": 0.0876127777777664,
+        "peak_cuda_allocated_GB": 1.4233216,
+        "checkpoint": "results/pilot_full100/seed_17/time_coverage/teacher/best.pt",
+        "checkpoint_sha256": "7c55face28ad0e1adf452ff3ea265c94ce1c515d9d2b7dccbdd2d78116463c97"
+      },
+      "student": {
+        "signature": "81dba2d9d8a7626ac505ba855f7712ad450dcc62383d3a8c529a001eafdaa22a",
+        "seed": 17,
+        "updates": 2000,
+        "human_seen": 4000,
+        "pseudo_seen": 0,
+        "n_human_frames": 1659,
+        "n_pseudo_frames": 0,
+        "best_validation_AP": 0.7148514960578698,
+        "best_step": 1500,
+        "cuda_run_wall_hours": 0.08787777777777389,
+        "peak_cuda_allocated_GB": 1.43013888,
+        "checkpoint": "results/pilot_full100/seed_17/time_coverage/M1/student/best.pt",
+        "checkpoint_sha256": "b12b3f53e3b924d8ddf944c149aa08197de74d553256905ca5e3029d4b280805"
+      },
+      "B": 1659,
+      "V": 72,
+      "query_sha256": "94d436e90d722ab96aedb047583567a4fa707f8db7058293e6d1ea5b65228996",
+      "pseudo": {
+        "n_frames": 0,
+        "n_instances": 0
+      },
+      "diagnostic": null,
+      "validation_only": true
+    },
+    {
+      "method": "M1",
+      "seed": 42,
+      "selector": "time_coverage",
+      "teacher": {
+        "signature": "8658281aa67f0a7f63d8804d6e968383c2925f8b2f60e6a6a7f0abf689e0aa6f",
+        "seed": 42,
+        "updates": 2000,
+        "human_seen": 4000,
+        "pseudo_seen": 0,
+        "n_human_frames": 1659,
+        "n_pseudo_frames": 0,
+        "best_validation_AP": 0.7168566823057021,
+        "best_step": 2000,
+        "cuda_run_wall_hours": 0.08749583333334562,
+        "peak_cuda_allocated_GB": 1.429468672,
+        "checkpoint": "results/pilot_full100/seed_42/time_coverage/teacher/best.pt",
+        "checkpoint_sha256": "d767bc8167ab7a1db50f5be1f6bdb8166ac7b687ee0df720bc386c64945139b4"
+      },
+      "student": {
+        "signature": "8658281aa67f0a7f63d8804d6e968383c2925f8b2f60e6a6a7f0abf689e0aa6f",
+        "seed": 42,
+        "updates": 2000,
+        "human_seen": 4000,
+        "pseudo_seen": 0,
+        "n_human_frames": 1659,
+        "n_pseudo_frames": 0,
+        "best_validation_AP": 0.7186252526033211,
+        "best_step": 2000,
+        "cuda_run_wall_hours": 0.08740444444444923,
+        "peak_cuda_allocated_GB": 1.426497024,
+        "checkpoint": "results/pilot_full100/seed_42/time_coverage/M1/student/best.pt",
+        "checkpoint_sha256": "fb2469dadc0c722754e6a50fd0935c7538c7bd85c9bf55d32993dfcd6f7c818e"
+      },
+      "B": 1659,
+      "V": 72,
+      "query_sha256": "94d436e90d722ab96aedb047583567a4fa707f8db7058293e6d1ea5b65228996",
+      "pseudo": {
+        "n_frames": 0,
+        "n_instances": 0
+      },
+      "diagnostic": null,
+      "validation_only": true
+    },
+    {
+      "method": "M1",
+      "seed": 73,
+      "selector": "time_coverage",
+      "teacher": {
+        "signature": "ffc595af6d9d02eb89434435e47333d0a01e188befd00afd66489dd1b8f658de",
+        "seed": 73,
+        "updates": 2000,
+        "human_seen": 4000,
+        "pseudo_seen": 0,
+        "n_human_frames": 1659,
+        "n_pseudo_frames": 0,
+        "best_validation_AP": 0.7133096040679178,
+        "best_step": 2000,
+        "cuda_run_wall_hours": 0.08765638888889549,
+        "peak_cuda_allocated_GB": 1.423178752,
+        "checkpoint": "results/pilot_full100/seed_73/time_coverage/teacher/best.pt",
+        "checkpoint_sha256": "e7b348f01e2fa56c88fdc25c56719b1041a4905488bf10b03b10d349e5b4761b"
+      },
+      "student": {
+        "signature": "ffc595af6d9d02eb89434435e47333d0a01e188befd00afd66489dd1b8f658de",
+        "seed": 73,
+        "updates": 2000,
+        "human_seen": 4000,
+        "pseudo_seen": 0,
+        "n_human_frames": 1659,
+        "n_pseudo_frames": 0,
+        "best_validation_AP": 0.7023031821907989,
+        "best_step": 1500,
+        "cuda_run_wall_hours": 0.0875088888888907,
+        "peak_cuda_allocated_GB": 1.427179008,
+        "checkpoint": "results/pilot_full100/seed_73/time_coverage/M1/student/best.pt",
+        "checkpoint_sha256": "84898f2a4a7011262c7aa127042fae36edb994b7dae12e0bd98c8000bbd5932c"
+      },
+      "B": 1659,
+      "V": 72,
+      "query_sha256": "94d436e90d722ab96aedb047583567a4fa707f8db7058293e6d1ea5b65228996",
+      "pseudo": {
+        "n_frames": 0,
+        "n_instances": 0
+      },
+      "diagnostic": null,
+      "validation_only": true
+    }
+  ],
+  "gate": {
+    "status": "incomplete",
+    "formal_allowed": false,
+    "completed": 3,
+    "required": 18
+  },
+  "protocol_sha256": "6b1a55d00040c04a91d1e13c17a2760be6e6db86182b36d4b7219d2233f1c4fe"
+}

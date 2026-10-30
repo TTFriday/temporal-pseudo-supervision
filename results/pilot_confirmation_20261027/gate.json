@@ -1,0 +1,25 @@
+{
+  "status": "stop_for_review",
+  "formal_allowed": false,
+  "reference_only_not_significance": true,
+  "baseline": "M3",
+  "AP_mean_points": {
+    "M1": 68.85142476022085,
+    "M2": 68.77134215105963,
+    "M3": 70.37933108155956,
+    "M4": 70.06027897057648,
+    "M5": 70.31652397464437,
+    "M6": 70.34460564689816
+  },
+  "paired_AP_point_differences": [
+    -0.8138357466732415,
+    0.00711346308390759,
+    0.15713015461633617,
+    -0.18972389075035956,
+    -0.659526394247556,
+    -0.415470251927641
+  ],
+  "performance_gate": false,
+  "quality_gate": true,
+  "confirmation_split_still_required": true
+}

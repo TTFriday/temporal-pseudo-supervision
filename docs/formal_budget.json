@@ -1,0 +1,384 @@
+{
+  "provenance_checks": {
+    "source_sha256_identical": true,
+    "manifest_sha256_identical": true,
+    "split_sha256_identical": true,
+    "audit_sha256_identical": true,
+    "budget_ratios": {
+      "pilot_budget05": 0.05,
+      "pilot_budget20": 0.2,
+      "pilot_full100": 1.0,
+      "pilot_validated_20261025_v3": 0.1,
+      "pilot_validated_20261026_v4": 0.1
+    }
+  },
+  "budgets": {
+    "0.05": {
+      "methods": {
+        "M1": {
+          "seeds3_mean": 67.435,
+          "seeds3_per_seed": {
+            "17": 67.714,
+            "42": 67.281,
+            "73": 67.308
+          }
+        },
+        "M2": {
+          "seeds3_mean": 68.215,
+          "seeds3_per_seed": {
+            "17": 67.227,
+            "42": 68.34,
+            "73": 69.079
+          }
+        },
+        "M3": {
+          "seeds3_mean": 68.687,
+          "seeds3_per_seed": {
+            "17": 68.626,
+            "42": 68.902,
+            "73": 68.532
+          }
+        },
+        "M4": {
+          "seeds3_mean": 69.328,
+          "seeds3_per_seed": {
+            "17": 69.842,
+            "42": 69.002,
+            "73": 69.141
+          }
+        }
+      },
+      "comparisons_seeds3": [
+        {
+          "comparison": "M3-M1",
+          "per_seed_pp": [
+            0.911,
+            1.62,
+            1.224
+          ],
+          "mean": 1.252,
+          "sd": 0.355,
+          "min": 0.911,
+          "max": 1.62,
+          "positive": 3,
+          "n": 3
+        },
+        {
+          "comparison": "M4-M3",
+          "per_seed_pp": [
+            1.217,
+            0.1,
+            0.609
+          ],
+          "mean": 0.642,
+          "sd": 0.559,
+          "min": 0.1,
+          "max": 1.217,
+          "positive": 3,
+          "n": 3
+        },
+        {
+          "comparison": "M4-M1",
+          "per_seed_pp": [
+            2.128,
+            1.72,
+            1.833
+          ],
+          "mean": 1.894,
+          "sd": 0.21,
+          "min": 1.72,
+          "max": 2.128,
+          "positive": 3,
+          "n": 3
+        },
+        {
+          "comparison": "M2-M1",
+          "per_seed_pp": [
+            -0.487,
+            1.059,
+            1.771
+          ],
+          "mean": 0.781,
+          "sd": 1.155,
+          "min": -0.487,
+          "max": 1.771,
+          "positive": 2,
+          "n": 3
+        }
+      ]
+    },
+    "0.10": {
+      "methods": {
+        "M1": {
+          "seeds3_mean": 69.405,
+          "seeds3_per_seed": {
+            "17": 69.781,
+            "42": 69.823,
+            "73": 68.61
+          },
+          "seeds6_mean": 69.261
+        },
+        "M2": {
+          "seeds3_mean": 68.433,
+          "seeds3_per_seed": {
+            "17": 67.597,
+            "42": 68.58,
+            "73": 69.124
+          },
+          "seeds6_mean": 68.327
+        },
+        "M3": {
+          "seeds3_mean": 70.456,
+          "seeds3_per_seed": {
+            "17": 69.85,
+            "42": 70.743,
+            "73": 70.776
+          },
+          "seeds6_mean": 70.446
+        },
+        "M4": {
+          "seeds3_mean": 69.966,
+          "seeds3_per_seed": {
+            "17": 70.174,
+            "42": 68.872,
+            "73": 70.852
+          },
+          "seeds6_mean": 69.904
+        },
+        "M5": {
+          "seeds3_mean": 70.025,
+          "seeds3_per_seed": {
+            "17": 69.823,
+            "42": 69.848,
+            "73": 70.403
+          },
+          "seeds6_mean": 70.083
+        },
+        "M6": {
+          "seeds3_mean": 69.987,
+          "seeds3_per_seed": {
+            "17": 69.995,
+            "42": 69.286,
+            "73": 70.68
+          },
+          "seeds6_mean": 69.679
+        }
+      },
+      "comparisons_seeds3": [
+        {
+          "comparison": "M3-M1",
+          "per_seed_pp": [
+            0.069,
+            0.92,
+            2.166
+          ],
+          "mean": 1.052,
+          "sd": 1.055,
+          "min": 0.069,
+          "max": 2.166,
+          "positive": 3,
+          "n": 3
+        },
+        {
+          "comparison": "M4-M3",
+          "per_seed_pp": [
+            0.324,
+            -1.871,
+            0.076
+          ],
+          "mean": -0.49,
+          "sd": 1.202,
+          "min": -1.871,
+          "max": 0.324,
+          "positive": 2,
+          "n": 3
+        },
+        {
+          "comparison": "M4-M1",
+          "per_seed_pp": [
+            0.393,
+            -0.951,
+            2.242
+          ],
+          "mean": 0.562,
+          "sd": 1.603,
+          "min": -0.951,
+          "max": 2.242,
+          "positive": 2,
+          "n": 3
+        },
+        {
+          "comparison": "M2-M1",
+          "per_seed_pp": [
+            -2.184,
+            -1.243,
+            0.513
+          ],
+          "mean": -0.971,
+          "sd": 1.369,
+          "min": -2.184,
+          "max": 0.513,
+          "positive": 1,
+          "n": 3
+        }
+      ]
+    },
+    "0.20": {
+      "methods": {
+        "M1": {
+          "seeds3_mean": 70.626,
+          "seeds3_per_seed": {
+            "17": 70.791,
+            "42": 70.745,
+            "73": 70.341
+          }
+        },
+        "M2": {
+          "seeds3_mean": 68.944,
+          "seeds3_per_seed": {
+            "17": 68.968,
+            "42": 68.547,
+            "73": 69.317
+          }
+        },
+        "M3": {
+          "seeds3_mean": 70.734,
+          "seeds3_per_seed": {
+            "17": 70.645,
+            "42": 70.451,
+            "73": 71.105
+          }
+        },
+        "M4": {
+          "seeds3_mean": 70.519,
+          "seeds3_per_seed": {
+            "17": 70.906,
+            "42": 70.716,
+            "73": 69.935
+          }
+        }
+      },
+      "comparisons_seeds3": [
+        {
+          "comparison": "M3-M1",
+          "per_seed_pp": [
+            -0.147,
+            -0.294,
+            0.763
+          ],
+          "mean": 0.108,
+          "sd": 0.573,
+          "min": -0.294,
+          "max": 0.763,
+          "positive": 1,
+          "n": 3
+        },
+        {
+          "comparison": "M4-M3",
+          "per_seed_pp": [
+            0.261,
+            0.265,
+            -1.17
+          ],
+          "mean": -0.215,
+          "sd": 0.827,
+          "min": -1.17,
+          "max": 0.265,
+          "positive": 2,
+          "n": 3
+        },
+        {
+          "comparison": "M4-M1",
+          "per_seed_pp": [
+            0.115,
+            -0.029,
+            -0.406
+          ],
+          "mean": -0.107,
+          "sd": 0.269,
+          "min": -0.406,
+          "max": 0.115,
+          "positive": 1,
+          "n": 3
+        },
+        {
+          "comparison": "M2-M1",
+          "per_seed_pp": [
+            -1.823,
+            -2.199,
+            -1.025
+          ],
+          "mean": -1.682,
+          "sd": 0.6,
+          "min": -2.199,
+          "max": -1.025,
+          "positive": 0,
+          "n": 3
+        }
+      ]
+    },
+    "1.00": {
+      "methods": {
+        "M1": {
+          "seeds3_mean": 71.193,
+          "seeds3_per_seed": {
+            "17": 71.485,
+            "42": 71.863,
+            "73": 70.23
+          }
+        }
+      },
+      "comparisons_seeds3": null
+    }
+  },
+  "budget_curve_m3_minus_m1": [
+    {
+      "budget_ratio": 0.05,
+      "budget_labels": 83,
+      "M1_mean": 67.435,
+      "M3_mean": 68.687,
+      "m3_minus_m1_mean_pp": 1.252,
+      "m3_minus_m1_per_seed_pp": [
+        0.911,
+        1.62,
+        1.224
+      ],
+      "m3_minus_m1_positive": 3
+    },
+    {
+      "budget_ratio": 0.1,
+      "budget_labels": 166,
+      "M1_mean": 69.405,
+      "M3_mean": 70.456,
+      "m3_minus_m1_mean_pp": 1.052,
+      "m3_minus_m1_per_seed_pp": [
+        0.069,
+        0.92,
+        2.166
+      ],
+      "m3_minus_m1_positive": 3
+    },
+    {
+      "budget_ratio": 0.2,
+      "budget_labels": 332,
+      "M1_mean": 70.626,
+      "M3_mean": 70.734,
+      "m3_minus_m1_mean_pp": 0.108,
+      "m3_minus_m1_per_seed_pp": [
+        -0.147,
+        -0.294,
+        0.763
+      ],
+      "m3_minus_m1_positive": 1
+    }
+  ],
+  "full_label_reference": {
+    "per_seed_AP": {
+      "17": 71.485,
+      "42": 71.863,
+      "73": 70.23
+    },
+    "mean_AP": 71.193,
+    "note": "Context only; not a theoretical upper bound of the low-label methods"
+  }
+}

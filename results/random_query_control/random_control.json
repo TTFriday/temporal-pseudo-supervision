@@ -1,0 +1,139 @@
+{
+  "provenance_checks": {
+    "source_sha256_identical": true,
+    "manifest_sha256_identical": true,
+    "split_sha256_identical": true,
+    "audit_sha256_identical": true,
+    "budget_ratio": 0.1,
+    "control_manifest": {
+      "purpose": "random-query control at the 10% label budget",
+      "methods": {
+        "R1": [
+          "random",
+          null
+        ],
+        "R2": [
+          "random",
+          "basic"
+        ]
+      },
+      "selector": "random",
+      "selector_seed": 42,
+      "training_seeds": [
+        17,
+        42,
+        73
+      ],
+      "config_path": "configs/validated_pilot.json",
+      "runner": "controls/run_random_query.py",
+      "runner_sha256": "51a4dcedb156950f76eb08648f9ba0f3e04b15d49e074c040ddb16f62ce719d8",
+      "note": "Methods added to training.pipeline.METHODS at runtime; pipeline source files are unmodified."
+    }
+  },
+  "methods": {
+    "M1": {
+      "per_seed_AP": {
+        "17": 69.781,
+        "42": 69.823,
+        "73": 68.61
+      },
+      "mean_AP": 69.405
+    },
+    "M3": {
+      "per_seed_AP": {
+        "17": 69.85,
+        "42": 70.743,
+        "73": 70.776
+      },
+      "mean_AP": 70.456
+    },
+    "R1": {
+      "per_seed_AP": {
+        "17": 68.798,
+        "42": 68.706,
+        "73": 68.815
+      },
+      "mean_AP": 68.773
+    },
+    "R2": {
+      "per_seed_AP": {
+        "17": 68.565,
+        "42": 69.632,
+        "73": 69.86
+      },
+      "mean_AP": 69.352
+    }
+  },
+  "primary_comparisons": [
+    {
+      "comparison": "M3-R2",
+      "per_seed_pp": [
+        1.285,
+        1.111,
+        0.916
+      ],
+      "mean_pp": 1.104,
+      "sd_pp": 0.185,
+      "positive": 3,
+      "n": 3,
+      "reading": "first method above second by > 1.0 pp with consistent sign"
+    },
+    {
+      "comparison": "M1-R1",
+      "per_seed_pp": [
+        0.983,
+        1.117,
+        -0.204
+      ],
+      "mean_pp": 0.632,
+      "sd_pp": 0.727,
+      "positive": 2,
+      "n": 3,
+      "reading": "no clear separation under the pre-registered rule"
+    }
+  ],
+  "secondary_comparisons": [
+    {
+      "comparison": "M3-M1",
+      "per_seed_pp": [
+        0.069,
+        0.92,
+        2.166
+      ],
+      "mean_pp": 1.052,
+      "sd_pp": 1.055,
+      "positive": 3,
+      "n": 3
+    },
+    {
+      "comparison": "R2-R1",
+      "per_seed_pp": [
+        -0.233,
+        0.925,
+        1.045
+      ],
+      "mean_pp": 0.579,
+      "sd_pp": 0.706,
+      "positive": 2,
+      "n": 3
+    }
+  ],
+  "query_overlap": {
+    "seed_17": {
+      "shared": 51,
+      "M3_only": 115,
+      "random_only": 115
+    },
+    "seed_42": {
+      "shared": 51,
+      "M3_only": 115,
+      "random_only": 115
+    },
+    "seed_73": {
+      "shared": 51,
+      "M3_only": 115,
+      "random_only": 115
+    }
+  },
+  "note": "Descriptive control; reading rules fixed in the pre-registration."
+}

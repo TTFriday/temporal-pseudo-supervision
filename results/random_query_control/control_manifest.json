@@ -1,0 +1,24 @@
+{
+  "purpose": "random-query control at the 10% label budget",
+  "methods": {
+    "R1": [
+      "random",
+      null
+    ],
+    "R2": [
+      "random",
+      "basic"
+    ]
+  },
+  "selector": "random",
+  "selector_seed": 42,
+  "training_seeds": [
+    17,
+    42,
+    73
+  ],
+  "config_path": "configs/validated_pilot.json",
+  "runner": "controls/run_random_query.py",
+  "runner_sha256": "51a4dcedb156950f76eb08648f9ba0f3e04b15d49e074c040ddb16f62ce719d8",
+  "note": "Methods added to training.pipeline.METHODS at runtime; pipeline source files are unmodified."
+}
